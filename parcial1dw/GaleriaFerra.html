@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Ferrari</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            background-color: #e53935;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery-item {
+            flex: 1 1 300px;
+            max-width: 300px;
+            min-width: 250px;
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .btn-back {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #e53935;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galería de Ferrari</h1>
+    <div class="container">
+        <div class="gallery-item">
+            <img src="imagenes/458italias.jpg" alt="Ferrari 1">
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes/488pista.jpg" alt="Ferrari 2">
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes/museoferrari.jpg" alt="Ferrari 3">
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes/ferrari 1.jpg" alt="Ferrari 4">
+        </div>
+        <!-- Agrega más imágenes de Ferrari aquí -->
+        <!-- ... -->
+    </div>
+    <a href="index.html" class="btn-back">Regresar</a>
+</body>
+</html>

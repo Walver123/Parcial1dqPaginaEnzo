@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Enzo Ferrari</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            background-color: #e53935;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .submit-btn {
+            background-color: #e53935;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #c62828;
+        }
+        .info-container {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .info-item {
+            max-width: 300px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .info-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .info-item p {
+            margin-top: 10px;
+        }
+        .info-item:hover {
+            transform: scale(1.05);
+        }
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .social-icon {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .social-icon:hover {
+            color: #e53935;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Contacto - Enzo Ferrari</h1>
+    <div class="container">
+        <div class="contact-form">
+            <h2>Envíanos tus comentarios</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+        </div>
+        <div class="info-container">
+            <div class="info-item">
+                <img src="imagenes/fabricaferrari.jpg" alt="Fábrica de Ferrari">
+                <p>Visita nuestra fábrica y descubre cómo se crean los legendarios autos deportivos.</p>
+            </div>
+            <div class="info-item">
+                <img src="imagenes/museoferrari.jpg" alt="Museo de Ferrari">
+                <p>Explora el Museo Ferrari y admira la historia de la marca y sus vehículos más icónicos.</p>
+            </div>
+            <div class="info-item">
+                <img src="imagenes/enzo_ferrari.jpg" alt="Retrato de Enzo Ferrari">
+                <p>Enzo Ferrari, fundador de la legendaria marca de automóviles.</p>
+            </div>
+            <div class="info-item">
+                <img src="imagenes/enf_carrera.jpg" alt="Ferrari en una carrera">
+                <p>Ferrari compitiendo en una emocionante carrera de automovilismo.</p>
+            </div>
+            <div class="info-item">
+                <img src="imagenes/458italias.jpg" alt="Ferrari 458 Italia">
+                <p>El impresionante Ferrari 458 Italia, un superdeportivo de alto rendimiento.</p>
+            </div>
+            <div class="info-item">
+                <img src="imagenes/motor.jpg" alt="Motor de Ferrari">
+                <p>El corazón de un Ferrari: un motor de alto rendimiento y tecnología avanzada.</p>
+            </div>
+        </div>
+        <!-- Código para el botón de regresar -->
+<a href="index.html" style="position: fixed; top: 20px; right: 20px; display: flex; align-items: center; background-color: #e53935; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; text-decoration: none;">
+    <i class="fas fa-arrow-left" style="margin-right: 5px;"></i>Regresar
+  </a>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f social-icon"></i>
+            <i class="fab fa-twitter social-icon"></i>
+            <i class="fab fa-instagram social-icon"></i>
+            <i class="fab fa-youtube social-icon"></i>
+        </div>
+    </div>
+</body>
+</html>
